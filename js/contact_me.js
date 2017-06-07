@@ -21,14 +21,15 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
-                type: "POST",
+                url: "//formspree.io/hello@tahirahabrash.com",
+                method: "POST",
                 data: {
                     name: name,
                     phone: phone,
                     email: email,
                     message: message
                 },
+				dataType: "json",
                 cache: false,
                 success: function() {
                     // Enable button & show success message
