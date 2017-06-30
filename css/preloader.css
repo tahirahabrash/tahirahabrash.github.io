@@ -16,17 +16,17 @@
 }
 
 #status {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   left: 50%;
   /* centers the loading animation horizontally one the screen */
   top: 50%;
   /* centers the loading animation vertically one the screen */
-  background-image: url(../img/logo.loader.gif);
+  background-image: url(https://github.com/tahirahabrash/tahirahabrash.github.io/blob/master/img/logo/load.gif);
   /* path to your loading animation */
   background-repeat: no-repeat;
   background-position: center;
-  margin: -100px 0 0 -100px;
+  margin: -150px 0 0 -150px;
   /* is width and height divided by two */
 }
