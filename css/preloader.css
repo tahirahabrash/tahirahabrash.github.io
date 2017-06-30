@@ -30,3 +30,9 @@
   margin: -150px 0 0 -150px;
   /* is width and height divided by two */
 }
+
+/* Loadie */
+
+.loadie {
+	z-index: 9999;
+	}
