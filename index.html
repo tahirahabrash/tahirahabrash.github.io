@@ -17,11 +17,12 @@
 
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/preloader.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" media="screen" href="vendor/clear-sans/css/clear-sans.css">
-
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,6 +33,10 @@
 </head>
 
 <body id="page-top" class="index">
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
     <!-- Navigation -->
@@ -484,6 +489,17 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    
+    <!-- Preloader -->
+    <script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').delay(2000).fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(2000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(2000).css({'overflow':'visible'});
+          })
+    //]]>
+</script>
 
 </body>
 
